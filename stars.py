@@ -1,4 +1,4 @@
-#dataset: https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Cl*+NGC+6205+++++AJ+++++++2&NbIdent=query_hlinks&Coord=16+41+05.0724333192%2B36+28+20.864287632&parents=1&siblings=526&submit=siblings&hlinksdisplay=h_all,
+#dataset: https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Cl*+NGC+6205+++++AJ+++++++2&NbIdent=query_hlinks&Coord=16+41+05.0724333192%2B36+28+20.864287632&parents=1&siblings=526&submit=siblings&hlinksdisplay=h_all
 #siblings of following star: https://simbad.cds.unistra.fr/simbad/sim-id?mescat.fe_h=on&mescat.plx=on&mescat.pm=on&Ident=%402885722&Name=Cl*+NGC+6205+++++AJ+++++++2&submit=display+all+measurements#lab_meas
 
 '''
