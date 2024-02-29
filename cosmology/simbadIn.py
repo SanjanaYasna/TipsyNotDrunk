@@ -2,7 +2,7 @@
 import sys
 from astropy.io.votable import parse
 import pandas as pd
-from stars import *
+from old_delete_soon.stars import *
 import os
 def votable_to_pandas(votable_file):
     votable = parse(votable_file)
