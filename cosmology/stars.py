@@ -23,12 +23,19 @@ from astropy.coordinates import (SkyCoord, Distance, Galactic,
 import re 
 import math
 
+#array for each row of dataframe, what directly gets fed into tispy generator
 star_np = np.dtype([
     ('position', np.float64, (3,)), #position is np subarray of 3 float64
     ('velocity', np.float64, (3,)), #velocity is np subarray of 3 float64,
-    ("metallicity", np.float64),
+    ("metallicity", np.float64), #metallicity index relative to the sun
+    ("softening", np.float64),
+    ("potential", np.float64),
+    ("time_formation", np.int64),
+    ("mass", np.int64),
     ("star_obj", SkyCoord)
 ])
+
+#define star data struct to be used in star_np array
 @dataclass
 class star:
     position = [] #maybe convert to np arrays or better structure
@@ -87,11 +94,14 @@ def J2000_to_pos(star,right_acension = star.ra, declination = star.dec, distance
 #https://astropy-cjhang.readthedocs.io/en/latest/coordinates/velocities.html as a guide
 #maybe check the pm_ra_cosdec value again, it's a bit complicated
 def cartesian_velocities(star, proper_motion_ra = star.pm_ra, proper_motion_dec = star.pm_dec, radial_velocity = star.ra):
-    # star.pm_dec = proper_motion_dec
-    # star.pm_ra = proper_motion_ra
     arr = np.array([star.velocity.d_x.value, star.velocity.d_y.value, star.velocity.d_z.value])
+    #nan to zero
+    arr[np.isnan(arr)] = 0
     return arr
 
+
+def calculate_softening():
+    return
 # if __name__ == "__main__":
 #     star1 = star()
 #     star1.position = J2000_to_pos(250, 36)
