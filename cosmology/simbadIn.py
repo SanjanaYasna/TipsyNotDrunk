@@ -41,10 +41,8 @@ def main():
    # np_arr["velocity"] = np.array(list(map(cartesian_velocities, np.array(np_arr["star_obj"], dtype = SkyCoord) )))
     #print(np.array(list(map(cartesian_velocities, np.array(np_arr["star_obj"], dtype = SkyCoord) ))))
     return np_arr
+
 if __name__ == "__main__":
     arr_out = main()
     wtipsy("tipsytest", header = header, cats = arr_out )
-    # star1 = star()
-    # star1.position = J2000_to_pos(250, 36)
-    # star1.velocity = cartesian_velocities(-3.117, -2.574, -247, star1)
-    # print("velocities received: ", star1.velocity)
+

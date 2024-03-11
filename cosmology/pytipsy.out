@@ -1,0 +1,2 @@
+{'time': 0.9999999999999966, 'n': 110592, 'ndim': 3, 'ngas': 0, 'ndark': 110592, 'nstar': 0}
+{'mass': array([], dtype=float64), 'pos': array([], shape=(0, 3), dtype=float64), 'vel': array([], shape=(0, 3), dtype=float64), 'dens': array([], dtype=float64), 'tempg': array([], dtype=float64), 'h': array([], dtype=float64), 'zmetal': array([], dtype=float64), 'phi': array([], dtype=float64), 'x': array([], dtype=float64), 'vx': array([], dtype=float64), 'y': array([], dtype=float64), 'vy': array([], dtype=float64), 'z': array([], dtype=float64), 'vz': array([], dtype=float64)}
