@@ -89,9 +89,9 @@ def rtipsy(filename, out, VERBOSE=False):
             catg['vz'][i] = vz
             catg['dens'][i] = dens
             catg['tempg'][i] = tempg
-            catg['h'][i] = h
+            catg['h'][i] = h #softening
             catg['zmetal'][i] = zmetal
-            catg['phi'][i] = phi
+            catg['phi'][i] = phi #potential
     if (nd > 0):
         for i in range(nd):
             if endianswap:
